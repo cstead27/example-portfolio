@@ -1,0 +1,63 @@
+Time-course Analysis of changes in proteome profile
+
+
+This folder contains an example time-course analysis of longitudinal proteomics data, demonstrating how coordinated temporal expression patterns can be identified, interpreted, and validated using unsupervised multivariate methods.
+
+The analysis is intentionally exploratory and discovery-focused, treating time as a biological variable rather than as a simple categorical contrast. 
+The aim is to capture dominant temporal trajectories and contextualise them using functional enrichment and network-level analyses.
+
+This work and scripts similar in  nature built the core frame work of this recent publication identifying differing time-courses of proteome responses to skeletal muscle loading: 
+https://journals.physiology.org/doi/full/10.1152/ajpcell.00254.2025?rfr_dat=cr_pub++0pubmed&url_ver=Z39.88-2003&rfr_id=ori%3Arid%3Acrossref.org 
+
+
+
+Analytical approach
+
+The workflow follows four key stages:
+	1.	Statistical Analysis
+  • Using a 2-way analysis of the variance to allow for full inclusion of the experimental design within the statistical model and subsequent biological interpretation
+	2.	Trajectory identification
+	•	Fuzzy clustering (Mfuzz) is used to identify dominant temporal expression patterns
+	•	This approach allows partial cluster membership, reflecting biological uncertainty and shared dynamics
+	•	Cluster number is chosen to capture major qualitative patterns efficiently rather than maximal separation
+	3.	Functional interpretation
+	•	High-membership proteins from each trajectory are subjected to functional enrichment analysis
+	•	Enrichment results are used to contextualise temporal behaviour, not to infer direct causality
+	4.	Network validation
+	•	Protein–protein interaction networks are generated for clustered proteins
+	•	Network connectivity is used as a validation step to assess biological coherence of trajectories
+
+Main analysis script performs:
+	•	Data structuring for time-course analysis
+	•	Fuzzy clustering of temporal trajectories
+	•	Extraction of high-membership cluster features
+	•	Functional enrichment and network-level validation
+
+⸻
+
+Output figures
+
+Example output figures included in this folder illustrate:
+	•	Cluster trajectories
+Representative temporal expression patterns identified by fuzzy clustering
+	•	Functional enrichment lollipop plots
+Enriched biological processes associated with each trajectory
+	•	Protein–protein interaction networks
+Network visualisation of trajectory-associated proteins
+
+These figures are intended to demonstrate interpretability and downstream analysis methods rather than to present final biological conclusions.
+
+
+This analysis is designed around several guiding principles:
+	•	Temporal dynamics are best explored using trajectory-based approaches rather than repeated pairwise contrasts
+	•	Functional and network analyses are supportive tools and should be interpreted conservatively
+	•	Biological insight emerges from pattern consistency across methods, not from any single analysis step
+
+Intended use
+
+This example is provided to demonstrate:
+	•	Analytical reasoning for longitudinal omics data
+	•	Appropriate use of unsupervised methods in time-course studies
+	•	Careful interpretation of enrichment and network analyses
+	•	Reproducible, readable R-based workflows suitable for collaborative environments
+
