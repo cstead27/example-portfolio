@@ -15,7 +15,7 @@ Analytical approach
 
 The workflow follows four key stages:
 	1.	Statistical Analysis
-  • Using a 2-way analysis of the variance to allow for full inclusion of the experimental design within the statistical model and subsequent biological interpretation
+  	• Modelled experimental effects using factorial linear models (e.g. two-factor designs with interactions), enabling explicit representation of the experimental structure and biologically interpretable contrasts.
 	2.	Trajectory identification
 	•	Fuzzy clustering (Mfuzz) is used to identify dominant temporal expression patterns
 	•	This approach allows partial cluster membership, reflecting biological uncertainty and shared dynamics
