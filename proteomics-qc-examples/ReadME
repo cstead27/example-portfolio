@@ -1,0 +1,48 @@
+Proteomics QC and Exploratory Analysis Examples
+
+This folder contains selected R scripts demonstrating my approach to quality control and exploratory analysis of quantitative proteomics data. 
+The examples are adapted from real research workflows but use anonymised or example data. The emphasis is on analytical robustness, interpretability, and appropriate methodological choice rather than biological claims.
+
+These scripts illustrate assessments of data quality, structure, and signal before moving to formal statistical modelling or biological interpretation.
+
+Contents
+
+00_abundance_data_cleaning.R
+
+Helper functions for tidying and standardising protein-level abundance data exported from proteomics software.
+
+Helps ensure: 
+	•	Consistent data wrangling and preprocessing
+	•	Handling of peptide- and protein-level metadata
+	•	Separation of metadata and quantitative matrices
+
+
+
+01_qc_proteomics_example.R
+
+Initial quality control and exploratory assessment of quantitative proteomics data.
+
+Key analyses include:
+	•	Per-sample missingness profiling
+	•	Abundance distribution assessment of normal proteome abundance profile
+	•	Inter-sample correlation structure
+	•	Identification of potential outlier samples
+	•	Generation of a combined QC summary figure
+
+The accompanying figure (abd_myofib_qc_plots.pdf) summarises these checks and illustrates how multiple QC metrics are integrated to support downstream analysis decisions.
+
+
+
+02_multivariate_exploration_example.R
+
+Exploratory and supervised multivariate analysis applied after QC confirms acceptable data quality.
+
+Analyses include:
+	•	Principal Component Analysis (PCA) to assess global structure
+	•	Supervised PLS-DA with cross-validation
+	•	Evaluation of classification performance and feature stability
+	•	Conservative interpretation of separation (or lack thereof)
+
+Supervised methods are used and interpreted in the context of cross-validation performance to avoid overfitting or overstating signal.
+
+
