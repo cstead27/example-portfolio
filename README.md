@@ -1,6 +1,6 @@
 # Analysis Portfolio
 
-This repository contains a small set of self-contained examples demonstrating my approach to data analysis, modelling, and reproducible reporting in R, with a focus on omics and experimental biology.
+This repository contains a small set of self-contained examples demonstrating my approach to data analysis, modelling, and biological inferences, with a focus on omics and experimental biology.
 
 The examples are intentionally compact and use synthetic or anonymised data. The emphasis is on **analysis structure, statistical reasoning, code clarity, and reproducibility**, rather than on novel biological findings.
 
