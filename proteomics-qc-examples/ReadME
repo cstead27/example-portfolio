@@ -7,7 +7,7 @@ These scripts illustrate assessments of data quality, structure, and signal befo
 
 Contents
 
-00_abundance_data_cleaning.R
+abundance_data_cleaning.R
 
 Helper functions for tidying and standardising protein-level abundance data exported from proteomics software.
 
@@ -18,7 +18,7 @@ Helps ensure:
 
 
 
-01_qc_proteomics_example.R
+00_qc_proteomics_example.R
 
 Initial quality control and exploratory assessment of quantitative proteomics data.
 
@@ -33,7 +33,7 @@ The accompanying figure (abd_myofib_qc_plots.pdf) summarises these checks and il
 
 
 
-02_multivariate_exploration_example.R
+01_multivariate_exploration_example.R
 
 Exploratory and supervised multivariate analysis applied after QC confirms acceptable data quality.
 
