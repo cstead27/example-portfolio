@@ -9,8 +9,9 @@ The examples are intentionally compact and use synthetic or anonymised data. The
 - **qc_pipeline**  
   Example quality control and normalisation workflow for LC–MS proteomics data, including distribution checks, transformation, and sample-level QC visualisation.
 
-- **Analytical_pipeline**
-  Simple, clean analytical pipeline comparing differences in proteome profile between different in Vitro treatment conditions
+- **differential-expression-analysis**
+  Simple, clean analytical pipeline comparing differences in proteome profile between different in Vitro treatment conditions using linear models.
+  Followed by functional enrichment analysis.
 
 - **timecourse_statistical_and_clustering_analysis**  
   Time-course analysis using multifactoral ANOVA to extract significant interactions across time and conditions and apply unsupervised clustering and network analysis. 
